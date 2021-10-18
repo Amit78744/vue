@@ -75,7 +75,8 @@ export default {
         }
     },mounted()
     {
-        Vue.axios.get('https://dummy.restapiexample.com/api/v1/employees',{
+        Vue.axios.post('http://52.77.235.8/getHomescreenData',{
+            //https://dummy.restapiexample.com/api/v1/employees
             website_name:'xyz'
         })
         .then((resp)=>{
