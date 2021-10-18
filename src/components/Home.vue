@@ -15,7 +15,7 @@
     
         <h1 v-if="currentUrl == 'http://abc.anviya.in/#/'">ABC Home Page</h1>
         <h1 v-else-if="currentUrl == 'http://xyz.anviya.in/#/'">XYZ Home Page</h1>
-        <h1 v-else>{{list[0].employee_name}} default Homes Page</h1>
+        <h1 v-else>{{list.email}} default Homes Page</h1>
         
         <!-- <h3 v-once>{{name}}</h3>
         <h3>{{a + b}}</h3>
