@@ -15,7 +15,7 @@
     
         <h1 v-if="currentUrl == 'http://abc.anviya.in/#/'">ABC Home Page</h1>
         <h1 v-else-if="currentUrl == 'http://xyz.anviya.in/#/'">XYZ Home Page</h1>
-        <h1 v-else>{{list.email}} default Homes Page</h1>
+        <h1 v-else>{{list}} default Homes Page</h1>
         
         <!-- <h3 v-once>{{name}}</h3>
         <h3>{{a + b}}</h3>
@@ -39,7 +39,7 @@ export default ({
     },
     mounted()
     {
-        Vue.axios.post('http://52.77.235.8/getHomescreenData',{
+        Vue.axios.post('https://api.github.com/zen',{
             website_name:'xyz'
         })
         .then((resp)=>{
