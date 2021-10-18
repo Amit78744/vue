@@ -30,48 +30,48 @@ import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 
-Vue.use(VueAxios,axios)
-export default ({
-    name:"EmployeeList",
-    data()
-    {
-        return {list:undefined}
-    },
-    mounted()
-    {
-        Vue.axios.post('http://52.77.235.8/getHomescreenData',{
-            website_name:'xyz'
-        })
-        .then((resp)=>{
-            this.list = resp.data.data;
-            console.warn(resp.data.data);
-        })
-    }
-})
-
-// export default {
-//     name:'About',
-//     currentUrl : window.currentUrl,
+// Vue.use(VueAxios,axios)
+// export default ({
+//     name:"EmployeeList",
 //     data()
 //     {
-//         return {
-//             name:'Amit',
-//             a:10,
-//             b:20,
-//             currentUrl : window.location,
-//             ok:true,
-//             rowHtml:"<h1>Hello Welcome in Vue.js</h1>",
-//             disableBtn:true,
-//         }
-//     },methods:{
-//         updateText()
-//         {
-//             this.name="Raj"
-//         },
-//         display()
-//         {
-//             this.currentUrl=!this.currentUrl
-//         }
+//         return {list:undefined}
+//     },
+//     mounted()
+//     {
+//         Vue.axios.post('http://52.77.235.8/getHomescreenData',{
+//             website_name:'xyz'
+//         })
+//         .then((resp)=>{
+//             this.list = resp.data.data;
+//             console.warn(resp.data.data);
+//         })
 //     }
-// };
+// })
+
+export default {
+    name:'About',
+    currentUrl : window.currentUrl,
+    data()
+    {
+        return {
+            name:'Amit',
+            a:10,
+            b:20,
+            currentUrl : window.location,
+            ok:true,
+            rowHtml:"<h1>Hello Welcome in Vue.js</h1>",
+            disableBtn:true,
+        }
+    },methods:{
+        updateText()
+        {
+            this.name="Raj"
+        },
+        display()
+        {
+            this.currentUrl=!this.currentUrl
+        }
+    }
+};
 </script>
