@@ -4,7 +4,7 @@
 sudo chown -R ec2-user /var/www/html
 
 #navigate into our working directory where we have all our github files
-cd /var/www/html/vue
+cd /var/www/html/maidanlah-customer
 
 #add npm and node to path
 export NVM_DIR="$HOME/.nvm"	
