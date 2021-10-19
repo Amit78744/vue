@@ -8,6 +8,4 @@ cd /var/www/html/vue
 
 #install node modules
 npm install
-
-#start to build our vue.js app in the background
-npm run build > app.out.log 2> app.err.log < /dev/null &
+npm run build
