@@ -39,7 +39,7 @@ import VueAxios from 'vue-axios';
 //     },
 //     mounted()
 //     {
-//         Vue.axios.post('http://52.77.235.8/getHomescreenData',{
+//         Vue.axios.post('http://52.77.235.8/maidanlah-backend/getHomescreenData',{
 //             website_name:'xyz'
 //         })
 //         .then((resp)=>{
