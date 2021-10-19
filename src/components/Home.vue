@@ -19,7 +19,7 @@
         
         <!-- <h3 v-once>{{name}}</h3>
         <h3>{{a + b}}</h3>
-6
+
         <h3>{{ok?"yes":"No"}}</h3>
         <button v-on:click="display">Click me</button> -->
     </div>
