@@ -75,7 +75,7 @@ export default {
         }
     },mounted()
     {
-        Vue.axios.post('http://52.77.235.8/maidannlag-backend/getHomescreenData',{
+        Vue.axios.post('http://52.77.235.8/maidanlah-backend/getHomescreenData',{
             //https://dummy.restapiexample.com/api/v1/employees
             website_name:'xyz'
         })
