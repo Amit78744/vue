@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/maidanlah-customer
+    destination: /var/www/html/vue
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
